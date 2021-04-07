@@ -1,11 +1,12 @@
 -var path = '';
 -var head_url = '';
--var head_title = 'Узнайте, как зарабатывать на криптовалютной бирже в авторежиме с доходностью от 5% в месяц!';
--var head_description = 'Онлайн-лекция “Алгоритмический трейдинг – инновационная стратегия торговли на криптовалютной бирже”';
+-var head_title = 'Узнайте, как зарабатывать с помощью алгоритмического трейдинга с доходностью от 5% в месяц!';
+-var head_description = 'Онлайн-лекция “Алгоритмический трейдинг – полная автоматизация торговли на бирже уже сегодня”';
 //-var head_img = 'img/banner.jpg';
 -var styles = path+'css/styles-1.min.css';
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
+-var fav_ap = path+'favicon.svg';
 -var scripts = path+'js/scripts-1.js';
 //- -var noref = true
 -var action = '';
@@ -15,22 +16,34 @@
 //- -var footer_title = true
 //- -var oferta = 'https://mastervision.su/oferta.docx'
 //- -var ak = true
+-var headerLight = false;
+-var href = '#Modal';
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b(cl,clb,href,p,target,id)
+	.button-wrapper(class=cl)
+		a.button(class=clb href=href target=target id=id)=p
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
 <!DOCTYPE html>
 html(lang="ru")
 	head
 		include pug/head
 		include pug/scripts/head_scripts
-	body(style="height: 1500px;")
+	body
 		include pug/scripts/body_top_scripts
-		include pug/main-1/1-main
-		include pug/main-1/2-form
-		include pug/main-1/3-video
-		include pug/main-1/4-about
-		include pug/main-1/5-know
-		include pug/main-1/6-decision
-		include pug/main-1/7-club
-		include pug/main-1/8-author
-		include pug/main-1/9-last
+		.wrapper
+			include pug/main-1/1-main
+			include pug/main-1/2-form
+			include pug/main-1/3-video
+			include pug/main-1/4-about
+			include pug/main-1/5-know
+			include pug/main-1/6-decision
+			include pug/main-1/7-club
+			include pug/main-1/8-author
+			include pug/main-1/9-last
 		include pug/main-1/10-modal
 		include pug/base/3-scripts
 		//- include pug/scripts/chat

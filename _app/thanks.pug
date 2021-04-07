@@ -1,0 +1,49 @@
+-var path = '../';
+-var head_url = '';
+-var head_title = 'Благодарим за регистрацию на вебинар!';
+-var head_description = 'Присоединяйтесь к закрытой группе в Telegram!';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/thanks.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var fav_ap = path+'favicon.svg';
+//-var scripts = path+'js/scripts-1.js';
+//- -var noref = true
+//-var action = '';
+//-var group = '';
+//-var formId = '';
+//-var formVc = '';
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+//- -var ak = true
+//-var headerLight = false;
+//-var href = '#Modal';
+
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			section#main
+				.container
+					include pug/base/1-header
+					h1.main-title Благодарим за регистрацию 
+						br
+						span на вебинар!
+					.row
+						.col-md-6
+							+imgs('main-img','img/images/laptop.png','Laptop')
+						.col-md-6
+							h2.main-subtitle Присоединяйтесь к закрытой группе в Telegram!
+							p.main-text Только у нас – самые последние новости мира инвестиций и крутые лайфхаки для приумножения капитала!
+							a.button-thanks(href="#!" target="_blank")
+								img.button-thanks-img(src=path+"img/icons/tg.png" alt="Telegram")
+								|  Подписаться
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

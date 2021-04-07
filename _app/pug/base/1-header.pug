@@ -1,10 +1,30 @@
-header
-	a(href="https://mastervision.su", target="_blank")
-		img.header-logo(src=path+"img/logo.png", alt="Логотип")
-	.contacts
-		//- a.contact.contact-tel(href="callto:8-929-568-87-50" target="_blank")
-		//- 	i.fa.fa-phone(aria-hidden="true")
-		//- 	span 8-929-568-87-50
-		a.contact.contact-tel(href="callto:8-499-346-79-46" target="_blank") 8-499-346-79-46
-		a.contact.contact-skype(href="https://join.skype.com/invite/gkwrZmJPOtuf" target="_blank") support-mastervision
-		a.contact.contact-email(href="mailto:info@mastervision.su" target="_blank") info@mastervision.su
+if headerLight
+	header.header-light
+		.logo
+			a.logo-link(href="https://mycapitalland.ru/")
+				+imgs('logo-link-img','img/images/logo-1.png','Логотип')
+			p.logo-text Инвестиционный холдинг 
+				br
+				| «Мой капитал»
+		.contacts
+			.contact.contact-tg
+				p.contact-text Присоединяйтесь
+				a.contact-link(href="https:tg.me" target="_blank") Telegram-канал
+			.contact.contact-phone
+				p.contact-text Позвонить нам
+				a.contact-link(href="callto:88007009598" target="_blank") 8 800 700 9598
+else
+	header.header-dark
+		.logo
+			a.logo-link(href="https://mycapitalland.ru/")
+				+imgs('logo-link-img','img/images/logo.png','Логотип')
+			p.logo-text Инвестиционный холдинг 
+				br
+				| «Мой капитал»
+		.contacts
+			.contact.contact-tg
+				p.contact-text Присоединяйтесь
+				a.contact-link(href="https:tg.me" target="_blank") Telegram-канал
+			.contact.contact-phone
+				p.contact-text Позвонить нам
+				a.contact-link(href="callto:88007009598" target="_blank") 8 800 700 9598
