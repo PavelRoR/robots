@@ -7,7 +7,7 @@
 -var fav_ico = path+'favicon.ico';
 -var fav_png = path+'favicon.png';
 -var fav_ap = path+'favicon.svg';
-//-var scripts = path+'js/scripts-1.js';
+-var scripts = path+'js/thanks.js';
 //- -var noref = true
 //-var action = '';
 //-var group = '';
@@ -31,8 +31,8 @@ html(lang="ru")
 		include pug/scripts/body_top_scripts
 		.wrapper
 			section#main
+				include pug/base/1-header
 				.container
-					include pug/base/1-header
 					h1.main-title Благодарим за регистрацию 
 						br
 						span на вебинар!
@@ -42,8 +42,9 @@ html(lang="ru")
 						.col-md-6
 							h2.main-subtitle Присоединяйтесь к закрытой группе в Telegram!
 							p.main-text Только у нас – самые последние новости мира инвестиций и крутые лайфхаки для приумножения капитала!
-							a.button-thanks(href="#!" target="_blank")
+							a.button-thanks(href="https://mycapital.autoweboffice.ru/index.php?r=form/telegram&id_bot=3")
 								img.button-thanks-img(src=path+"img/icons/tg.png" alt="Telegram")
 								|  Подписаться
+		include pug/base/3-scripts
 		//- include pug/scripts/chat
 		include pug/scripts/body_bottom_scripts

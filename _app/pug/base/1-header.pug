@@ -15,16 +15,28 @@ if headerLight
 				a.contact-link(href="callto:88007009598" target="_blank") 8 800 700 9598
 else
 	header.header-dark
-		.logo
-			a.logo-link(href="https://mycapitalland.ru/")
-				+imgs('logo-link-img','img/images/logo.png','Логотип')
-			p.logo-text Инвестиционный холдинг 
-				br
-				| «Мой капитал»
-		.contacts
-			.contact.contact-tg
-				p.contact-text Присоединяйтесь
-				a.contact-link(href="https:tg.me" target="_blank") Telegram-канал
-			.contact.contact-phone
-				p.contact-text Позвонить нам
-				a.contact-link(href="callto:88007009598" target="_blank") 8 800 700 9598
+		.container
+			.logo
+				a.logo-link(href="https://mycapitalland.ru/")
+					+imgs('logo-link-img','img/images/logo.png','Логотип')
+				p.logo-text Инвестиционный холдинг 
+					br
+					| «Мой капитал»
+			.header-nav
+				.logo.logo-mobile
+					a.logo-link(href="https://mycapitalland.ru/")
+						+imgs('logo-link-img','img/images/logo.png','Логотип')
+					p.logo-text Инвестиционный холдинг 
+						br
+						| «Мой капитал»
+				.contacts
+					.contact.contact-tg
+						p.contact-text Присоединяйтесь
+						a.contact-link(href="https:tg.me" target="_blank") Telegram-канал
+					.contact.contact-phone
+						p.contact-text Позвонить нам
+						a.contact-link(href="callto:88007009598" target="_blank") 8 800 700 9598
+		.mobile-menu
+			.mobile-menu-line.mobile-menu-line-1
+			.mobile-menu-line.mobile-menu-line-2
+			.mobile-menu-line.mobile-menu-line-3
