@@ -7,6 +7,10 @@
 	background-size: cover
 	text-align center
 	color: #fff
+	@media screen and (max-width 991px)
+		padding 70px 0
+	@media screen and (max-width 560px)
+		padding 50px 0
 .last-title
 	font-family: GM
 	font-size: 35px
@@ -15,6 +19,10 @@
 	width 100%
 	max-width 850px
 	margin 0 auto
+	@media screen and (max-width 560px)
+		font-size: 26px
+	@media screen and (max-width 385px)
+		font-size: 24px
 .footer-title
 	font-family: GM
 	font-size: 20px
@@ -23,6 +31,16 @@
 	margin 50px auto 30px
 	width 100%
 	max-width 750px
+	@media screen and (max-width 560px)
+		font-size: 18px
+		margin 30px 0
+	@media screen and (max-width 385px)
+		margin 20px 0 30px
+		font-size: 16px
+.soc-links
+	margin-bottom: 50px
+	@media screen and (max-width 560px)
+		margin-bottom: 30px
 .soc-link
 	width 50px
 	height: 50px
@@ -34,7 +52,6 @@
 	background-repeat: no-repeat
 	text-decoration none
 	transition: all .3s ease
-	margin-bottom: 50px
 	&:focus
 		text-decoration none
 	&:hover
@@ -59,3 +76,5 @@
 		background-position: -200px 0
 		box-shadow: 0px 1px 25.23px 3.77px rgba(59, 89, 152, 0.79);
 		background-color #3b5998
+	@media screen and (max-width 560px)
+		margin 0 1px

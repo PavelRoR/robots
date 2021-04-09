@@ -5,6 +5,10 @@
 	width: auto;
 	max-width: 650px;
 	margin: 20px auto;
+	@media screen and (max-width 560px)
+		padding 30px 20px 20px
+	@media screen and (max-width 385px)
+		padding 30px 15px 15px
 .form-modal
 	margin: 0 auto
 .modal-title
@@ -13,6 +17,13 @@
 	font-size: 30px
 	font-weight: bold
 	margin-bottom: 25px
+	text-transform uppercase
+	@media screen and (max-width 560px)
+		font-size: 24px
+		margin-bottom: 20px
+	@media screen and (max-width 385px)
+		font-size: 22px
+		margin-bottom: 10px
 .mfp-fade.mfp-bg
 	opacity: 0;
 	transition: all 0.5s ease-out;
@@ -46,3 +57,5 @@
 	max-width 380px
 .checking-modal
 	max-width 440px
+	@media screen and (max-width 991px)
+		max-width 380px

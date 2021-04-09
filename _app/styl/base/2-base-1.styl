@@ -21,6 +21,14 @@
 		background-color: #CC922F - 25%
 	&-wrapper-center
 		text-align center
+	@media screen and (max-width 991px)
+		&-wrapper
+			text-align center
+	@media screen and (max-width 560px)
+		padding 20px
+	@media screen and (max-width 385px)
+		min-width: 1px
+		font-size: 16px
 .general-wrapper
 	&-grey
 		padding 40px 30px
@@ -29,21 +37,34 @@
 		margin-bottom: 30px
 		position relative
 		z-index 25
+	@media screen and (max-width 560px)
+		padding 20px
+	@media screen and (max-width 385px)
+		padding 15px
+		margin-bottom: 20px
 	&-title
 		text-transform uppercase
 		font-family GM
 		font-size: 18px
 		font-weight: 900
 		margin-bottom: 30px
+		@media screen and (max-width 560px)
+			margin-bottom: 20px
 	&-extratitle
 		text-transform uppercase
 		font-family GM
 		font-size: 22px
 		font-weight: 900
+		@media screen and (max-width 560px)
+			font-size: 20px
 .general-text
 	margin-bottom: 30px
 	&-bold
 		font-weight: bold
+	@media screen and (max-width 560px)
+		margin-bottom: 20px
+	@media screen and (max-width 385px)
+		margin-bottom: 10px
 .general-title
 	font-family: GM
 	font-size: 35px
@@ -52,6 +73,13 @@
 	margin-bottom: 50px
 	&-right
 		text-align right
+	@media screen and (max-width 991px)
+		text-align center
+	@media screen and (max-width 560px)
+		font-size: 26px
+		margin-bottom: 30px
+	@media screen and (max-width 385px)
+		font-size: 22px
 .general-list
 	list-style none
 .content
@@ -63,3 +91,10 @@
 	img
 		position absolute
 		width auto
+	@media screen and (max-width 991px)
+		padding 0
+		img
+			position static
+			display block
+			width 100%
+			margin 0 auto 30px
