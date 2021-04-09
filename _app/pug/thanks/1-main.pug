@@ -1,0 +1,15 @@
+section#main
+	include ../base/1-header
+	.container
+		h1.main-title Благодарим за регистрацию 
+			br
+			span на вебинар!
+		.row
+			.col-md-6
+				+imgs('main-img','img/images/laptop.png','Laptop')
+			.col-md-6
+				h2.main-subtitle Присоединяйтесь к закрытой группе в Telegram!
+				p.main-text Только у нас – самые последние новости мира инвестиций и крутые лайфхаки для приумножения капитала!
+				a.button-thanks(href="https://mycapital.autoweboffice.ru/index.php?r=form/telegram&id_bot=3")
+					img.button-thanks-img(src=path+"img/icons/tg.png" alt="Telegram")
+					|  Подписаться

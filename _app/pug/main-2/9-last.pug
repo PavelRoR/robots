@@ -1,0 +1,27 @@
+section#last
+	.container
+		h3.last-title
+			span Оцените все преимущества использования высоких технологий для приумножения капитала!
+		.footer
+			h5.footer-title ПОДПИСЫВАЙТЕСЬ НА НОВОСТИ, ЧТОБЫ ВСЕГДА БЫТЬ В КУРСЕ САМЫХ ЛУЧШИХ ПРЕДЛОЖЕНИЙ ПО ИНВЕСТИРОВАНИЮ!
+			.soc-links
+				mixin sl(cl,sLink)
+					a.soc-link(class!='soc-link-'+cl href!=sLink)
+				|
+				|
+				+sl('vk','https://vk.com/')
+				|
+				|
+				+sl('yt','https://youtube.com/')
+				|
+				|
+				+sl('insta','https://instagram.ru/')
+				|
+				|
+				+sl('tg','https://telegram.ru/')
+				|
+				|
+				+sl('fb','https://facebook.com/')
+			p.footer-text My Capital Limited
+			p.footer-text Регистрационный номер 2020-00166
+			p.footer-text Юридический адрес: Rodney Bayside Building, Rodney Bay, Gros-Islet, Saint Lucia
