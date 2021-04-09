@@ -7,10 +7,12 @@
 	background-position: center
 	background-size cover
 	color #fff
-	// @media screen and (max-width 991px)
-	// 	padding 0 0 50px
-	// @media screen and (max-width 560px)
-	// 	padding 0 0 30px
+	@media screen and (max-width 991px)
+		padding 0 0 50px
+	@media screen and (max-width 767px)
+		text-align center
+	@media screen and (max-width 560px)
+		padding 0 0 30px
 .main
 	&-pre
 		&-1
@@ -21,25 +23,27 @@
 			margin-bottom: 20px
 			text-align: center
 			background-color #380368
-			// @media screen and (max-width 991px)
-			// 	text-align center
-			// @media screen and (max-width 385px)
-			// 	margin-bottom: 10px
+			@media screen and (max-width 560px)
+				font-size: 14px
 		&-2
 			font-size: 18px
 			text-transform uppercase
-			// @media screen and (max-width 560px)
-			// 	display inline
-			// 	line-height: 50px
-			// 	padding 5px 0
-			// @media screen and (max-width 385px)
-			// 	line-height: 2.3
+			@media screen and (max-width 560px)
+				margin-top: 20px
+				font-size: 16px
 	&-title
 		font-family: GM
 		font-size: 40px
 		font-weight: 900
 		text-transform uppercase
 		margin 35px 0 0
+		@media screen and (max-width 767px)
+			font-size: 32px
+		@media screen and (max-width 560px)
+			font-size: 26px
+			margin 20px 0 0
+		@media screen and (max-width 385px)
+			font-size: 24px
 	&-subtitle
 		font-family: GM
 		font-size: 25px
@@ -47,25 +51,29 @@
 		margin 0 0 70px
 		position relative
 		text-transform uppercase
-		&-span
+		@media screen and (max-width 767px)
+			font-size: 22px
+		@media screen and (max-width 560px)
+			font-size: 20px
+		span
 			position relative
 			z-index 20
-		&-rect
-			position absolute
-			width 480px
-			height 60px
-			background-color: #380368
-			top -3px
-			left -5px
-			z-index -1
-		// @media screen and (max-width 991px)
-		// 	margin-bottom: 35px
-		// @media screen and (max-width 560px)
-		// 	font-size: 30px
-		// 	line-height: 1.3
-		// @media screen and (max-width 385px)
-		// 	font-size: 24px
-		// 	margin 20px 0 30px
+		&-span
+			&:before
+				content: ''
+				display block
+				position absolute
+				width 480px
+				height 60px
+				background-color: #380368
+				top -3px
+				left -5px
+				z-index -1
+				@media screen and (max-width 385px)
+					width 100%
+					left 0
+					right 0
+					margin 0 auto
 	&-info
 		position relative
 		display inline-block
@@ -91,11 +99,6 @@
 			width 130px
 			height: 20px
 			background-color: #4EB7F9
-		// @media screen and (max-width 991px)
-		// 	display block
-		// 	text-align center
-		// @media screen and (max-width 560px)
-		// 	padding 20px 0
 		&-text
 			position relative
 			z-index 20
@@ -103,12 +106,14 @@
 			line-height: 24px
 			span
 				font-weight: bold
-			// @media screen and (max-width 991px)
-			// 	text-align center
-			// @media screen and (max-width 560px)
-			// 	display block
-			// 	line-height: 1.2
-			// 	span
-			// 		display inline-block
-			// 	&:last-of-type
-			// 		margin-top: 10px
+		@media screen and (max-width 767px)
+			padding 35px 15px
+			&:before
+				top - 27px
+				left 0
+				right 0
+				margin 0 auto
+			&:after
+				margin 0 auto
+				left 0
+				right 0
