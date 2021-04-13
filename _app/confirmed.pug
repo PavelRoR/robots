@@ -1,0 +1,26 @@
+-var path = '../';
+-var head_url = 'https://robots.mycapitalland.ru/confirmed/';
+-var head_title = 'Ваш почтовый адрес успешно подтверждён!';
+-var head_description = 'Присоединяйтесь к закрытой группе в Telegram!';
+//-var head_img = 'img/banner.jpg';
+-var styles = path+'css/confirmed.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var fav_ap = path+'favicon.svg';
+-var scripts = path+'js/thanks.js';
+
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			include pug/conf/1-main
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
