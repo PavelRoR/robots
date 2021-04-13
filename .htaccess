@@ -10,4 +10,4 @@
 
 RewriteEngine On
 
-ErrorDocument 404  https://mastervision.su/404/
+ErrorDocument 404  /404/

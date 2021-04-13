@@ -1,0 +1,29 @@
+-var path = '../';
+-var head_url = 'https://robots.mycapitalland.ru/404/';
+-var head_title = 'Упс... Что-то не так!';
+-var head_description = 'Похоже, страницы с указанным адресом не существует или Вы ввели неверный адрес';
+-var styles = path+'css/thanks.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var fav_ap = path+'favicon.svg';
+-var scripts = path+'js/thanks.js';
+
+mixin imgs(cl, src, alt)
+	img(class=cl src=path+src alt=alt)
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		.wrapper
+			section#main
+				include pug/base/1-header
+				.container
+					h1.main-title Упс... Что-то не так!
+					h2.main-subtitle Похоже, страницы с указанным адресом не существует или Вы ввели неверный адрес
+		include pug/base/3-scripts
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
